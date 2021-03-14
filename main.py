@@ -16,13 +16,13 @@ print("4-Letras")
 
 escutar = int(input("Where?:\n"))
 
-if (escutar <= 0 or escutar >= 5):
+while(escutar <= 0 or escutar >= 5):
     print("Choose the number between 1 and 4")
     print("1-Spotify")
     print("2-Deezer")
     print("3-Youtube")
     print("4-Letras")
-
+    escutar = int(input("Where?:\n"))
 if (escutar == 1):
             new = 2
             url = ("https://open.spotify.com/search/" + musica)
