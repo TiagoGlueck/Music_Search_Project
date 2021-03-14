@@ -1,9 +1,9 @@
 import webbrowser
 
 
-print("##################")
-print("SEARCH#YOUR#MUSIC")
-print("##################")
+print("###################")
+print("#SEARCH#YOUR#MUSIC#")
+print("###################")
 
 
 musica = input("What is your favorite song?:\n")
