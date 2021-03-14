@@ -1,9 +1,9 @@
 import webbrowser
 
 
-print("\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6")
-print("\U0001f3b6\U0001f3b6SEARCH\U0001f3b6YOUR\U0001f3b6MUSIC\U0001f3b6\U0001f3b6")
-print("\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6")
+print("##################")
+print("SEARCH#YOUR#MUSIC")
+print("##################")
 
 
 musica = input("What is your favorite song?:\n")
@@ -27,23 +27,22 @@ if (escutar == 1):
             new = 2
             url = ("https://open.spotify.com/search/" + musica)
             webbrowser.open( url, new=new )
-            
+
 
 
 elif (escutar == 2):
     new = 2
     url = ("https://www.deezer.com/search/" + musica)
     webbrowser.open(url, new=new)
-    
+
 
 elif (escutar == 3):
     new = 2
     url = ("https://www.youtube.com/results?search_query=" + musica)
     webbrowser.open(url, new=new)
-    
+
 
 elif (escutar == 4):
     new = 2
     url = ("https://www.letras.com/?q=" + musica)
     webbrowser.open(url, new=new)
-    
