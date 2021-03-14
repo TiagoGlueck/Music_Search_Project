@@ -1,55 +1,49 @@
 import webbrowser
 
-print("#######################")
-print("###ABRE##SUA##MUSICA###")
-print("#######################")
+
+print("\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6")
+print("\U0001f3b6\U0001f3b6SEARCH\U0001f3b6YOUR\U0001f3b6MUSIC\U0001f3b6\U0001f3b6")
+print("\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6\U0001f3b6")
 
 
-musica = input("Qual sua musica favorita?:")
+musica = input("What is your favorite song?:\n")
 
-print("Aonde você quer escutar? (escolhendo o número")
+print("where do you want to listen? (please select the number)")
 print("1-Spotify")
 print("2-Deezer")
 print("3-Youtube")
 print("4-Letras")
 
-escutar_onde = int(input("Defina aonde:\n"))
+escutar = int(input("Where?:\n"))
 
-if (escutar_onde <= 0 or escutar_onde >= 5):
-    print("Escolha um número entre 1 e 4")
+if (escutar <= 0 or escutar >= 5):
+    print("Choose the number between 1 and 4")
     print("1-Spotify")
     print("2-Deezer")
     print("3-Youtube")
     print("4-Letras")
 
-    escutar_onde = int(input("Defina aonde:\n"))
+if (escutar == 1):
+            new = 2
+            url = ("https://open.spotify.com/search/" + musica)
+            webbrowser.open( url, new=new )
+            
 
 
-if (escutar_onde == 1):
-        new = 2
-        url = ("https://open.spotify.com/search/" + musica)
-        webbrowser.open(url, new=new)
-        print("###########################")
-        print("Obrigado por usar nosso app")
-        print("###########################")
-elif (escutar_onde == 2):
-        new = 2
-        url = ("https://www.deezer.com/search/" + musica)
-        webbrowser.open(url, new=new)
-        print("###########################")
-        print("Obrigado por usar nosso app")
-        print("###########################")
-elif (escutar_onde == 3):
-        new = 2
-        url = ("https://www.youtube.com/results?search_query=" + musica)
-        webbrowser.open(url, new=new)
-        print("###########################")
-        print("Obrigado por usar nosso app")
-        print("###########################")
-elif (escutar_onde == 4):
-        new = 2
-        url = ("https://www.letras.com/?q=" + musica)
-        webbrowser.open(url, new=new)
-        print("###########################")
-        print("Obrigado por usar nosso app")
-        print("###########################")
+elif (escutar == 2):
+    new = 2
+    url = ("https://www.deezer.com/search/" + musica)
+    webbrowser.open(url, new=new)
+    
+
+elif (escutar == 3):
+    new = 2
+    url = ("https://www.youtube.com/results?search_query=" + musica)
+    webbrowser.open(url, new=new)
+    
+
+elif (escutar == 4):
+    new = 2
+    url = ("https://www.letras.com/?q=" + musica)
+    webbrowser.open(url, new=new)
+    
